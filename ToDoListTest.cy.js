@@ -17,9 +17,13 @@ describe('Testai', () => {
 
     it('Ar atvaizduojamas Double-click to edit a todo tekstas', () => {
         cy.visit('https://todolist.james.am/#/');
-        cy.contains('.info p', 'Double-click to edit a toodo').should('be.visible');
+        cy.contains('footer.info p', 'Double-click to edit a todo').should('exist');
+        cy.contains('footer.info p', 'Double-click to edit a todo').should('be.visible');
 
     });
+    //gramatinė klaida, vietoje todo, puslapyje tekstas yra toodo
+
+    
 
     it('Ar input laukelyje atvaizduojamas tekstas What needs to be done?', () => {
         cy.visit('https://todolist.james.am/#/');
