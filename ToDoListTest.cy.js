@@ -37,8 +37,8 @@ describe('Testai', () => {
         cy.get('input.new-todo').type('1 uzduotis{enter}');
         cy.get('input.new-todo').type('2 uzduotis{enter}');
         cy.get('input.new-todo').type('3 uzduotis{enter}');
-        cy.get('.todo-list li').should('have.length.at.least', 1);
-        // cy.get('.todo-list li').should('have.length', 3); galima ir taip
+        // cy.get('.todo-list li').should('have.length.at.least', 1); //galima ir taip
+        cy.get('.todo-list li').should('have.length', 3); //galima ir taip
         // cy.get('ul.todo-list li').each(($el) => {
         //     cy.log($el)
         // })
@@ -52,10 +52,18 @@ describe('Testai', () => {
             });
     });
 
-
-
-
-
-
-
+    //double click ant visu elementu
+    it('Ar visi redaguojasi elementai', () => {
+        cy.visit('https://todolist.james.am/#/');
+        cy.get('input.new-todo').type('1 uzduotis{enter}');
+        cy.get('input.new-todo').type('2 uzduotis{enter}');
+        cy.get('input.new-todo').type('3 uzduotis{enter}');
+        cy.get('ul.todo-list li').each(($el, $list) => {
+           $el.dblclick();
+        })
+    });
 });
+
+
+
+
