@@ -2,7 +2,7 @@
 # To Do List - Cypress Testai
 
 ## Aprašymas
-Šis projektas yra automatizuotų testų rinkinys, parašytas naudojant [Cypress](https://www.cypress.io/) testavimo įrankį. Testai skirti patikrinti svetainės [To Do List](https://todolist.james.am/#/) pagrindines funkcijas ir UI elementus.
+Šis projektas yra automatizuotų testų rinkinys, parašytas naudojant [Cypress](https://www.cypress.io/) testavimo įrankį. Testai skirti patikrinti svetainės [To Do List](https://todolist.james.am/#/) pagrindines funkcijas.
 
 ## Reikalavimai
 - Node.js (versija 12 ar naujesnė)
@@ -12,8 +12,7 @@
 ## Diegimas
 1. Klonuokite šį repozitorijų:
    ```sh
-   git clone <repository-url>
-   cd <repository-folder>
+  https://github.com/Celiesiene/ToDoListTESTS/tree/main
    ```
 2. Įdiekite priklausomybes:
    ```sh
