@@ -10,8 +10,8 @@
 - Cypress
 
 ## Diegimas
-1. Klonuokite šį repozitorijų:
-   ```sh
+1. Klonuokite šią repozitoriją:
+   ```
   https://github.com/Celiesiene/ToDoListTESTS/tree/main
    ```
 2. Įdiekite priklausomybes:
